@@ -1,0 +1,28 @@
+{
+    "dependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/polyfill": "^7.2.5",
+        "@babel/preset-env": "^7.2.3",
+        "@babel/preset-react": "^7.0.0",
+        "axios": "^0.18.0",
+        "babel-loader": "^8.0.5",
+        "esm": "^3.0.84",
+        "express": "^4.16.4"
+    },
+    "scripts": {
+        "build-client": "webpack -r esm",
+        "build-client-watch": "webpack-dev-server -r esm --open",
+        "build-server-watch": "nodemon -r esm server/index.js"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.9",
+        "pg": "^7.8.0",
+        "prettier-eslint": "^8.8.2",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "sequelize": "^4.42.0",
+        "webpack": "^4.28.4",
+        "webpack-cli": "^3.2.1",
+        "webpack-dev-server": "^3.1.14"
+    }
+}
